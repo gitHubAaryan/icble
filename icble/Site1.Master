@@ -1,0 +1,945 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="icble.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title>International Confernce on Agriculture Statistics - 2023</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link href="css/owlcss.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+       <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+ <body id="home">
+    <form id="form1" runat="server">
+        <div>
+           
+    <!-- #BeginLibraryItem "/Library/header.lbi" -->
+    <div class=" logoOnBanner">  <a href="Registration.aspx" class=" regis blink_me">Registration </a> </div>
+    <header>
+
+       <div class="topBg">
+            <div class="">
+                <div class="row brb">
+                    <div class="col-12 col-sm-3">
+                        <div class="row brb">
+                            <div class="col-2 logoarea mt-3"><a href="https://icar.org.in/" target="_blank">
+                                <img src="images/logo1.png">
+                            </a></div>
+                            <div class="col-4 logoarea mt-4"><a href="https://www.worldbank.org/" target="_blank">
+                                <img src="images/logo2.png" alt=""></a></div>
+                            <div class="col-4 logoarea mt-4"><a href="https://www.worldbank.org/" target="_blank">
+                                <img src="images/logo3.png" alt=""></a></div>
+                            <div class="col-2 logoarea mt-4"> <a href="https://www.worldbank.org/" target="_blank">
+                                <img src="images/logo4.png" alt=""></a></div>
+                            
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 justify-content-center">
+                        <div class="headText mob-hider">
+                        <h1>International Conference</h1>
+                        <p style="font-size:20px;">Blended Learning Ecosystem for Higher Education in Agriculture</p>
+                        </div>
+                       
+                    </div>
+                    <div class="col-12 col-sm-3">
+                         <div class="row justify-content-end">
+                             <div class="col-4 col-sm-3 logoarea mt-3"><a href="https://icar.org.in/" target="_blank">
+                                <img src="images/leftlogo.png">
+                            </a></div>
+                         
+                             <div class="col-4 col-sm-3 logoarea mt-3"><a href="https://www.worldbank.org/" target="_blank">
+                                <img src="images/leftlogo2.png" alt=""></a></div>
+                            <div class="col-4 col-sm-3 logoarea mt-3"><a href="https://www.worldbank.org/" target="_blank">
+                                <img src="images/leftlogo3.png" alt=""></a></div>
+
+                                                 
+                           </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Static navbar -->
+        <div class=" containers">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown dropdown-slide">
+                            <a class="nav-link home" href="Default.aspx">Home
+
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown dropdown-slide">
+                            <a class="nav-link conf" href="javascript:void(0)" data-toggle="dropdown">Conference
+
+                            </a>
+                            <!-- Dropdown list -->
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="About.aspx">About Conference</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown dropdown-slide">
+                            <a class="nav-link prog" href="#" data-toggle="dropdown">Programme</a>
+                            <!-- Dropdown list -->
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="Thematic_Areas_Tracks.aspx">Thematic Areas</a>
+
+                                <a class="dropdown-item" href="Uploads\Tentative Program.pdf" target="_blank">Tentative
+                                    Schedule</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown dropdown-slide">
+                            <a class="nav-link infor" href="#" data-toggle="dropdown">Information</a>
+                            <!-- Dropdown list -->
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="about-delhi.aspx">About Delhi</a>
+                                <a class="dropdown-item" href="Visa_related_information.aspx">Visa Related Information</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link accomm" href="Accomodation.aspx">Accommodation
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link spec" href="SpecialEvents.aspx">Special Events
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-slide">
+                            <a class="nav-link down" href="javascript:void(0)" data-toggle="dropdown">Download</a>
+                            <!-- Dropdown list -->
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="Uploads\Downloads\ICBLE 2022 - Background Note.pdf"
+                                    target="_blank">Background Note</a>
+                                <a class="dropdown-item" href="Uploads\Downloads\ICBLE 2022 - Brochure.pdf"
+                                    target="_blank">Brochure</a>
+                                <a class="dropdown-item" href="Uploads\BLP- Conference-Flyer-02.pdf"
+                                    target="_blank">Flyer</a>
+                                 <a class="dropdown-item" href="Success.aspx" >Success Stories</a>
+
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link speak" href="Speakers.aspx">Speakers</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-slide">
+                            <a class="nav-link comm" href="javascript:void(0)" data-toggle="dropdown">Committee</a>
+                            <!-- Dropdown list -->
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="Advisory_Committee.aspx">Advisory Committee</a>
+                                <a class="dropdown-item" href="Organizing_Committee.aspx">Organizing Committee</a>
+                                <a class="dropdown-item" href="Scientific_Programme_Committee.aspx">Scientific Programme
+                                    Committee</a>
+                            </div>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link cont" href="Contact.aspx">Contact Us</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+    </header><!-- #EndLibraryItem -->
+<!-- #EndLibraryItem -->
+
+    <!------------------header End--------------------->
+    
+    <asp:ContentPlaceHolder ID="MainContentinner" runat="server">
+            </asp:ContentPlaceHolder>
+    <!--------------organazerBg end------------->
+    <!--------------marqee------------->
+    <div class=" marqueeBg">
+        <div class=" container">
+            <div class="gallery-scroller pl4 pr2 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="marquee o-hid" id="mycrawler2">
+                    <a href="gallery.html"><img src="images/incredle.jpg" width="160px" height="120"></a>
+                    <a href="gallery.html"> <img src="images/delhi.jpg" width="160px" height="120"></a>
+                    <a href="gallery.html"><img src="images/india.jpg" width="160px" height="120"></a>
+                    <a href="gallery.html"><img src="images/rajsthan.jpg" width="160px" height="120"></a>
+                    <a href="gallery.html"><img src="images/incredle.jpg" width="160px" height="120"></a>
+                    <a href="gallery.html"> <img src="images/delhi.jpg" width="160px" height="120"></a>
+                    <a href="gallery.html"><img src="images/india.jpg" width="160px" height="120"></a>
+                    <a href="gallery.html"><img src="images/rajsthan.jpg" width="160px" height="120"></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <div class=" container">
+            <div class="row">
+                <div class=" col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class=" contactBg mt-3">
+                        <h1>For further details</h1>
+                        <h2>Contact organizing secretaries</h2>
+                        <p>Email ID: <a href="mailto:icble2023@icar.gov.in">icble2023@icar.gov.in</a></p>
+                        <p>Phone: <a href="tel:+91 8856885646"> +91 8856885646</a> </p>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4 mt-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <script type="text/javascript" id="clustrmaps"
+                        src="//clustrmaps.com/map_v2.js?d=AWsiWTceLJGFc0oKxae1SwO3mN8Dg2vdp36uxxQmkBg&amp;cl=ffffff&amp;w=a"></script>
+                    <a target="_top"
+                        href="http://clustrmaps.com/site/1bpef?utm_source=widget&amp;utm_campaign=widget_ctr"
+                        id="clustrmaps-widget-v2" class="clustrmaps-map-control" style="width: 100%;">
+                        <div class="clustrmaps-map-container" style="background-color: rgb(45, 120, 173);">
+                            <div class="clstm clustrmaps-visitors"
+                                style="font-size: 12px; line-height: 16px; color: rgb(255, 255, 255);">1,693 Pageviews
+                            </div>
+                            <div class="clstm clustrmaps-date"
+                                style="font-size: 12px; line-height: 16px; color: rgb(255, 255, 255);">Aug. 05th - Sep.
+                                05th</div>
+                            <div class="clustrmaps-map liveDotsReady"
+                                style="width: 241px; height: 118.137px; background-image: url(&quot;//clustrmaps.com/generated_content/backs/bg-w_241-cl_ffffff.png&quot;);">
+                                <div class="jvectormap-container" style="background-color: transparent;"><svg
+                                        width="241" height="118">
+                                        <defs></defs>
+                                        <g
+                                            transform="scale(0.22312667401403313) translate(90.05197062374256, 44.07063107441327)">
+                                        </g>
+                                        <g></g>
+                                        <g style="visibility: visible;">
+                                            <circle data-index="0" cx="161.89145808526274" cy="58.5538818778002"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="4" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="1" cx="59.8235402277414" cy="51.09677643574185"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="4" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="2" cx="45.885833393708246" cy="51.46837676270902"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="3" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="3" cx="157.03996727503426" cy="62.07807069977615"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="3" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="4" cx="157.1627728535687" cy="56.95897171844459"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="3" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="5" cx="157.0557230407971" cy="57.063850605237135"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="6" cx="157.169309820215" cy="56.94732539311117"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="7" cx="159.27482766692606" cy="69.48325486840079"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="8" cx="158.8717147237386" cy="66.04710968283558"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="9" cx="164.6627967142282" cy="59.852780363880214"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="10" cx="154.74118987593437" cy="62.61484697601702"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="11" cx="60.77441745298155" cy="54.693589629882034"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="12" cx="157.85367994372206" cy="63.590939784110496"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="13" cx="108.7111113003743" cy="69.76385832290566"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="14" cx="156.79234474361266" cy="54.82425611766599"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="15" cx="157.37167642870082" cy="66.11295141240932"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="16" cx="155.85286530637114" cy="55.12892347417855"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="17" cx="87.96277916507053" cy="86.80061090286853"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="18" cx="113.94627176838081" cy="41.76882100799674"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="19" cx="157.2149568437194" cy="57.09323395935538"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="20" cx="156.64350304151264" cy="67.81367005775346"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="21" cx="91.97759411608452" cy="75.40338190747505"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="22" cx="188.3280127615193" cy="88.85638120078812"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="23" cx="71.2051813600581" cy="50.252921384193364"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="24" cx="118.19323284260257" cy="41.807941456649075"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="25" cx="156.31145865878733" cy="64.27875804033273"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="26" cx="116.45244421184826" cy="41.39139140418723"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="27" cx="133.01521806219753" cy="80.98822283046677"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="28" cx="61.91006176112136" cy="46.429298746437595"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="29" cx="156.32296818980558" cy="56.634562342076"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="30" cx="198.49673928764656" cy="93.06491236701885"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="31" cx="163.39239032445727" cy="60.5764202546391"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="32" cx="76.02627806895687" cy="57.34202328276907"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="33" cx="72.66180749198337" cy="49.0893591425294"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="34" cx="156.77921493881024" cy="62.74498083230094"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="35" cx="162.80870066160492" cy="60.71151018756287"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="36" cx="68.022796033514" cy="56.33907692670777"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="37" cx="70.73368168887873" cy="50.41488718609151"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="38" cx="66.91782518425289" cy="53.57787012722166"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="39" cx="70.20709270903923" cy="52.76112886302076"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="40" cx="119.04734061287382" cy="42.13897527796825"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="41" cx="66.36201540478939" cy="48.03014138211498"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="42" cx="45.787778894014" cy="44.54671050047369"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="43" cx="157.21875610638557" cy="56.99699506753957"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="44" cx="61.893970766299745" cy="51.714041267138015"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="45" cx="155.2830317779485" cy="62.936045930884134"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="46" cx="166.65919750230512" cy="58.09474834512312"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="47" cx="59.44992744172688" cy="55.74059536596694"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="48" cx="172.04409361656838" cy="72.678100322646"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="49" cx="125.30494971017085" cy="44.8943575277568"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="50" cx="178.75280928396876" cy="91.88559017412928"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="51" cx="59.285441716883646" cy="56.395389407096324"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="52" cx="191.45709666771677" cy="93.73791776862177"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="53" cx="71.11053502246149" cy="50.2715163777541"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="54" cx="45.692573841319415" cy="44.55622876082061"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="55" cx="128.1730019225954" cy="47.117924803466046"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="56" cx="157.36586579168187" cy="66.10647604480545"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="57" cx="109.54918394733373" cy="40.644556164285824"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="58" cx="59.46937072713635" cy="55.855470795138594"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="59" cx="72.67298179394284" cy="49.29981116921782"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="60" cx="45.259681383409955" cy="43.36904490471431"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="61" cx="195.01410046745178" cy="95.58506244669432"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="62" cx="59.041115604540074" cy="56.43380762779425"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="63" cx="70.89045714536994" cy="50.53509480963358"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="64" cx="47.132717877854475" cy="45.8304038825072"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="65" cx="124.6632095486391" cy="44.67551470271357"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="66" cx="159.060672169873" cy="64.0894697811006"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="67" cx="156.35855834154643" cy="67.09007995097883"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="68" cx="194.9378358565785" cy="95.6198033164099"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="69" cx="59.884049072851866" cy="54.32054229747225"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="70" cx="72.0808555331111" cy="49.596841992218216"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="71" cx="74.21213014583871" cy="45.16822214097278"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="72" cx="144.92071047037365" cy="58.98335279917683"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"
+                                                cursor="pointer"></circle>
+                                            <circle data-index="73" cx="157.07248449373628" cy="57.19446702410338"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="74" cx="161.9755447075077" cy="61.919656593002394"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="75" cx="173.70610341850852" cy="76.85451401721161"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="76" cx="71.7817194696564" cy="50.076699736225706"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="77" cx="45.82359253179406" cy="51.47211627861253"
+                                                fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5"
+                                                stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element">
+                                            </circle>
+                                            <circle data-index="1047066836" cx="157.03996727503426"
+                                                cy="62.07807069977615" fill="#F8A400" stroke="#FFFFFF" fill-opacity="1"
+                                                stroke-width="0.4" stroke-opacity="1" r="4"
+                                                class="jvectormap-marker jvectormap-element"></circle>
+                                            <circle data-index="1047062322" cx="157.169309820215" cy="56.94732539311117"
+                                                fill="#F8A400" stroke="#FFFFFF" fill-opacity="1" stroke-width="0.4"
+                                                stroke-opacity="1" r="4" class="jvectormap-marker jvectormap-element"
+                                                cursor="pointer"></circle>
+                                            <circle data-index="537858685" cx="161.89145808526274" cy="58.5538818778002"
+                                                fill="#F8A400" stroke="#FFFFFF" fill-opacity="1" stroke-width="0.4"
+                                                stroke-opacity="1" r="3" class="jvectormap-marker jvectormap-element"
+                                                cursor="pointer"></circle>
+                                        </g>
+                                        <g></g>
+                                    </svg>
+                                    <div class="jvectormap-legend-cnt jvectormap-legend-cnt-h"></div>
+                                    <div class="jvectormap-legend-cnt jvectormap-legend-cnt-v"></div>
+                                </div>
+                            </div>
+                            <div id="clstminf"
+                                style="display: table-cell;position: absolute;bottom: 3px;right: 5px;color: white;font-size: 12px;">
+                            </div>
+                        </div>
+                        <div class=""></div>
+                    </a>
+                    <style type="text/css">
+                        .jvectormap-container {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            overflow: hidden;
+                        }
+
+                        .jvectormap-tip {
+                            position: absolute;
+                            display: none;
+                            border: solid 1px #CDCDCD;
+                            border-radius: 3px;
+                            background: #292929;
+                            color: white;
+                            font-family: Arial, Helvetica, sans-serif;
+                            padding: 3px;
+                            z-index: 9999;
+                            font-size: 11px;
+                            line-height: 13px;
+                        }
+
+                        .jvectormap-zoomin,
+                        .jvectormap-zoomout,
+                        .jvectormap-goback {
+                            background: #ffffff none repeat scroll 0 0;
+                            border: 1px solid #bebebe;
+                            border-radius: 2px;
+                            box-sizing: content-box;
+                            color: #838383;
+                            cursor: pointer;
+                            font-weight: bold;
+                            left: 10px;
+                            padding: 3px;
+                            position: absolute;
+                            text-align: center;
+                            z-index: 1;
+                        }
+
+                        .jvectormap-zoomin,
+                        .jvectormap-zoomout {
+                            padding: 2px 10px;
+                        }
+
+                        .jvectormap-zoomin {
+                            top: 10px;
+                        }
+
+                        .jvectormap-zoomout {
+                            top: 37px;
+                        }
+
+                        .jvectormap-goback {
+                            bottom: 10px;
+                            z-index: 1000;
+                            padding: 6px;
+                        }
+
+                        .jvectormap-spinner {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: center no-repeat url(data:image/gif;base64,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);
+                        }
+
+                        .jvectormap-legend-title {
+                            font-weight: bold;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+
+                        .jvectormap-legend-cnt {
+                            position: absolute;
+                        }
+
+                        .jvectormap-legend-cnt-h {
+                            bottom: 0;
+                            right: 0;
+                        }
+
+                        .jvectormap-legend-cnt-v {
+                            top: 0;
+                            right: 0;
+                        }
+
+                        .jvectormap-legend {
+                            background: black;
+                            color: white;
+                            border-radius: 3px;
+                        }
+
+                        .jvectormap-legend-cnt-h .jvectormap-legend {
+                            float: left;
+                            margin: 0 10px 10px 0;
+                            padding: 3px 3px 1px 3px;
+                        }
+
+                        .jvectormap-legend-cnt-h .jvectormap-legend .jvectormap-legend-tick {
+                            float: left;
+                        }
+
+                        .jvectormap-legend-cnt-v .jvectormap-legend {
+                            margin: 10px 10px 0 0;
+                            padding: 3px;
+                        }
+
+                        .jvectormap-legend-cnt-h .jvectormap-legend-tick {
+                            width: 40px;
+                        }
+
+                        .jvectormap-legend-cnt-h .jvectormap-legend-tick-sample {
+                            height: 15px;
+                        }
+
+                        .jvectormap-legend-cnt-v .jvectormap-legend-tick-sample {
+                            height: 20px;
+                            width: 20px;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+
+                        .jvectormap-legend-tick-text {
+                            font-size: 12px;
+                        }
+
+                        .jvectormap-legend-cnt-h .jvectormap-legend-tick-text {
+                            text-align: center;
+                        }
+
+                        .jvectormap-legend-cnt-v .jvectormap-legend-tick-text {
+                            display: inline-block;
+                            vertical-align: middle;
+                            line-height: 20px;
+                            padding-left: 3px;
+                        }
+                    </style>
+                    <style type="text/css">
+                        a#clustrmaps-widget-v2,
+                        #clustrmaps-widget-v2 {
+                            display: block;
+                            font-size: 11px;
+                            line-height: 13px;
+                            margin: 0 auto;
+                            padding: 0;
+                            position: relative;
+                            text-align: center;
+                            color: transparent;
+                            min-height: 139px;
+                            text-decoration: none;
+                            /* text-shadow: 1px 1px 0 #01324f; */
+                            border: 0 none;
+                        }
+
+                        .clustrmaps-map {
+                            position: relative;
+                        }
+
+                        #clustrmaps-widget-v2>.clustrmaps-map-container {
+                            background-position: 0 0;
+                            background-repeat: no-repeat;
+                            position: relative;
+                        }
+
+                        #clustrmaps-widget-v2>.clustrmaps-map-container>.clustrmaps-date {
+                            text-align: center;
+                            width: 100%;
+                            z-index: 10;
+                        }
+
+                        #clustrmaps-widget-v2>.clustrmaps-map-container>.clustrmaps-logo {
+                            position: absolute;
+                            background-image: url("//clustrmaps.com/assets/clustrmaps/img/logo4-small.png");
+                            bottom: 0px;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            z-index: 1;
+                            width: 100px;
+                            height: 31px;
+                            left: 0px;
+                        }
+
+                        #clustrmaps-widget-v2>.clustrmaps-map-container>.clustrmaps-connection {
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            bottom: 0;
+                            color: rgba(255, 255, 255, 0.5);
+                            padding: 4px 4px;
+                            position: absolute;
+                            right: 0;
+                            z-index: 1;
+                            font-variant: small-caps;
+                        }
+
+                        #clustrmaps-widget-v2>.clustrmaps-bottom-text {
+                            letter-spacing: 0px;
+                            background: #FFFFFF;
+                            color: #000000;
+                            text-shadow: none;
+                        }
+
+                        #clustrmaps-widget-v2>.clustrmaps-cursor-click {
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            display: block;
+                            height: 29px;
+                            position: absolute;
+                            right: 0;
+                            top: 56px;
+                            width: 30px;
+                        }
+
+                        #clustrmaps-widget-v2>.clustrmaps-map-container>.clustrmaps-connection.clustrmaps-failed {
+                            color: rgba(255, 0, 0, 0.8);
+                        }
+
+                        /*#clustrmaps-widget-v2 > .clustrmaps-map-container {    background-image: url("//clustrmaps.com/images/map_v2_loading.png");}*/
+                        #clustrmaps-widget-v2>.clustrmaps-cursor-click {
+                            background-image: url("//clustrmaps.com/assets/clustrmaps/img/cursor_click.png");
+                        }
+
+                        #clustrmaps-widget-v2>.clustrmaps-bottom-text.variation {
+                            display: none;
+                        }
+
+                        /* CONTROL */
+                        /*#clustrmaps-widget-v2.clustrmaps-map-control > .clustrmaps-map-container {    background-image: url("//clustrmaps.com/images/map_v2-control.png");}*/
+                        #clustrmaps-widget-v2.clustrmaps-map-control>.clustrmaps-bottom-text {
+                            -webkit-border-radius: 3px;
+                            -moz-border-radius: 3px;
+                            border-radius: 3px;
+                            border: 1px solid #999;
+                            background: #F24D58;
+                            background: -moz-linear-gradient(top, #FF636D 50%, #DD2929 50%);
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f83737), color-stop(50%, #f83737));
+                            background: linear-gradient(to bottom, #FF636D 50%, #DD2929 51%);
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF636D", endColorstr="#f83737", GradientType=0);
+                            display: block;
+                            margin: 2px auto 0;
+                            padding: 3px 14px;
+                            color: #FFFFFF;
+                            text-shadow: 1px 1px 0px #5B0000;
+                            font-weight: 600;
+                        }
+
+                        #clustrmaps-widget-v2.clustrmaps-map-control>.clustrmaps-bottom-text:hover {
+                            border: 1px solid #888;
+                            background: #a3f5a2;
+                            background: -moz-linear-gradient(top, #ed8b92 50%, #D76666 50%);
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ed8b92), color-stop(50%, #D76666));
+                            background: linear-gradient(to bottom, #ed8b92 50%, #D76666 51%);
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed8b92", endColorstr="#D76666", GradientType=0);
+                        }
+
+                        #clustrmaps-widget-v2.clustrmaps-map-control>.clustrmaps-bottom-text.variation {
+                            display: none;
+                        }
+
+                        .clstm {
+                            text-transform: capitalize !important;
+                            position: relative;
+                        }
+
+                        #clustrmaps-widget-v2.clustrmaps-map-variation>.clustrmaps-bottom-text {
+                            -webkit-border-radius: 3px;
+                            -moz-border-radius: 3px;
+                            border-radius: 3px;
+                            border: 1px solid #999;
+                            background: #F24D58;
+                            background: -moz-linear-gradient(top, #FF636D 50%, #DD2929 50%);
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f83737), color-stop(50%, #f83737));
+                            background: linear-gradient(to bottom, #FF636D 50%, #DD2929 51%);
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF636D", endColorstr="#f83737", GradientType=0);
+                            display: block;
+                            margin: 2px auto 0;
+                            padding: 3px 14px;
+                            color: #FFFFFF;
+                            text-shadow: 1px 1px 0px #5B0000;
+                            font-weight: 600;
+                        }
+
+                        #clustrmaps-widget-v2.clustrmaps-map-variation>.clustrmaps-bottom-text {
+                            display: none;
+                        }
+
+                        #clustrmaps-widget-v2.clustrmaps-map-variation>.clustrmaps-bottom-text.variation {
+                            display: block;
+                        }
+
+                        #clustrmaps-widget-v2.clustrmaps-map-variation>.clustrmaps-bottom-text:hover {
+                            border: 1px solid #888;
+                            background: #a3f5a2;
+                            background: -moz-linear-gradient(top, #ed8b92 50%, #D76666 50%);
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ed8b92), color-stop(50%, #D76666));
+                            background: linear-gradient(to bottom, #ed8b92 50%, #D76666 51%);
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed8b92", endColorstr="#D76666", GradientType=0);
+                        }
+
+                        .clustrmaps-visitors,
+                        .clustrmaps-date,
+                        .clustrmaps-bottom-text {
+                            font-family: Arial, Helvetica, sans-serif;
+                            text-align: center;
+                            font-weight: normal;
+                        }
+
+                        .clustrmaps-bottom-text {
+                            font-size: 12px;
+                        }
+                    </style>
+                </div>
+                <div class=" col-sm-4 mt-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14007.50817410651!2d77.172901!3d28.633447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34cd7744935105ea!2sICAR-Indian%20Agricultural%20Statistics%20Research%20Institute!5e0!3m2!1sen!2sin!4v1662377547668!5m2!1sen!2sin"
+                        width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <div class="coppyright">
+        <p>© 2023 All Rights Reserved | Design & Developed by ICAR-Indian Agricultural Statistics Research Institute,
+            New Delhi</p>
+    </div>
+
+
+    <p id="back-top" style="display: block;"> <a href="#top"><span> </span></a></p>
+    <!---------------Bootstrap----------------->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/template.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.skitter.min.js"></script>
+    <!-- Init Skitter -->
+    <script src="scripts/owl.carousel.js"></script>
+    <script src="scripts/function.js"></script>
+    <script src="js/crawler.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        marqueeInit({
+            uniqueid: 'mycrawler2',
+            style: {
+                'padding': '0 10px',
+                'width': '1280px',
+                'border': '0px solid #CC3300'
+            },
+            inc: 5, //speed - pixel increment for each iteration of this marquee's movement
+            mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+            moveatleast: 2,
+            neutral: 150,
+            persist: true,
+            savedirection: true
+        });
+
+
+    </script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+
+
+           
+        </div>
+    </form>
+    
+</body>
+</html>
